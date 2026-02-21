@@ -1,0 +1,9 @@
+{
+  "id": "bear-tabs-navigator",
+  "name": "Bear Tabs Navigator",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Bear-inspired two-panel navigation with tag tree and note list",
+  "author": "Manuel",
+  "isDesktopOnly": false
+}

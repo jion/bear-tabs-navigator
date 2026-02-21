@@ -1,0 +1,180 @@
+/* Bear Tabs Navigator */
+
+.bear-nav-container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Left panel: Tag tree */
+.bear-tag-panel {
+  width: 50%;
+  min-width: 140px;
+  overflow-y: auto;
+  border-right: 1px solid var(--background-modifier-border);
+  padding: 4px 0;
+}
+
+/* Right panel: Note list */
+.bear-note-panel {
+  width: 50%;
+  min-width: 140px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+/* Tag item row */
+.bear-tag-item {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  cursor: pointer;
+  border-radius: var(--radius-s);
+  margin: 1px 4px;
+  font-size: var(--font-ui-small);
+  color: var(--text-normal);
+  gap: 4px;
+}
+
+.bear-tag-item:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+.bear-tag-item--selected {
+  background-color: var(--nav-item-background-active);
+  color: var(--nav-item-color-active);
+  font-weight: var(--nav-item-weight-active);
+}
+
+/* Chevron for expand/collapse */
+.bear-tag-chevron {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 100ms ease;
+}
+
+.bear-tag-chevron svg {
+  width: 12px;
+  height: 12px;
+  color: var(--text-faint);
+}
+
+.bear-tag-chevron--expanded {
+  transform: rotate(90deg);
+}
+
+/* Tag icon (#) */
+.bear-tag-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bear-tag-icon svg {
+  width: 14px;
+  height: 14px;
+  color: var(--text-muted);
+}
+
+/* Tag name */
+.bear-tag-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Tag count badge */
+.bear-tag-count {
+  font-size: var(--font-smallest);
+  color: var(--text-faint);
+  flex-shrink: 0;
+  margin-left: 4px;
+}
+
+/* Note list header */
+.bear-note-header {
+  padding: 10px 12px 6px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.bear-note-header-title {
+  font-size: var(--font-ui-small);
+  font-weight: 600;
+  color: var(--text-normal);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bear-note-header-count {
+  font-size: var(--font-smallest);
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Note list scroll area */
+.bear-note-list {
+  padding: 4px 0;
+}
+
+/* Note card */
+.bear-note-card {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.bear-note-card:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+.bear-note-card--active {
+  background-color: var(--nav-item-background-active);
+}
+
+.bear-note-card-title {
+  font-size: var(--font-ui-small);
+  font-weight: 600;
+  color: var(--text-normal);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 2px;
+}
+
+.bear-note-card-preview {
+  font-size: var(--font-smallest);
+  color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.bear-note-card-date {
+  font-size: var(--font-smallest);
+  color: var(--text-faint);
+}
+
+/* Show more button */
+.bear-show-more {
+  padding: 8px 12px;
+  text-align: center;
+  font-size: var(--font-ui-small);
+  color: var(--text-accent);
+  cursor: pointer;
+}
+
+.bear-show-more:hover {
+  background-color: var(--nav-item-background-hover);
+}
