@@ -1,0 +1,9 @@
+{
+  "id": "ai-filename",
+  "name": "AI Filename",
+  "version": "0.1.0",
+  "minAppVersion": "1.0.0",
+  "description": "Decouple filenames from titles. A local LLM generates short kebab-case filenames from note content; the H1 inside the file is the real title.",
+  "author": "Manuel",
+  "isDesktopOnly": false
+}
